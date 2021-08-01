@@ -1,7 +1,7 @@
 export const getStaticProps = () => {
   return {
     props: {
-      name: process.env.NAME
+      name: process.env.NEXT_PUBLIC_NAME
     }
   }
 }
@@ -9,6 +9,7 @@ export const getStaticProps = () => {
 
 const Home = ({ name }) => {
   console.log(name)
+  console.log(process.env.NEXT_PUBLIC_NAME)
   return (
     <div>
       sadi
